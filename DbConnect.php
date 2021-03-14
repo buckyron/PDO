@@ -3,7 +3,7 @@
 		private $host = 'localhost';
 		private $dbName = 'registration';
 		private $user = 'root';
-		private $pass = '';
+		private $pass = 'GZxUrGwg9F';
 
 		public function connect() {
 			try {
