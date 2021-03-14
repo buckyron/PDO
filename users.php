@@ -41,7 +41,7 @@
         }
 
         public function getUserByEmail() {
-			$stmt = $this->conn->prepare('SELECT * FROM Users WHERE email = :email');
+			$stmt = $this->conn->prepare('SELECT * FROM users WHERE email = :email');
 			$stmt->bindParam(':email', $this->email);
 			try {
 				if($stmt->execute()) {
@@ -54,7 +54,7 @@
 		}
 
         public function save() {
-            $sqlInsert = "INSERT INTO `Users`(`id`, `username`, `firstname`, `lastname`, `email`, `password`, `website`, `phone`, `age`, `dob`) VALUES (null,:username,:firstname,:lastname,:email,:password,:website,:phone,:age,:dob)";
+            $sqlInsert = "INSERT INTO `users`(`id`, `username`, `firstname`, `lastname`, `email`, `password`, `website`, `phone`, `age`, `dob`) VALUES (null,:username,:firstname,:lastname,:email,:password,:website,:phone,:age,:dob)";
             $stmt = $this->conn->prepare($sqlInsert);
 
             $stmt->bindParam(':username', $this->username);
@@ -79,7 +79,7 @@
         }
 
         public function createJSON(){
-            $query = "select * from Users";
+            $query = "select * from users";
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
             $result = $stmt->fetchAll();
@@ -90,7 +90,7 @@
         }
 
         public function update() {
-            $sqlInsert = "UPDATE Users SET firstname= :firstname, lastname= :lastname, phone= :phone, website= :website, age= :age, dob= :dob  WHERE email= :email";
+            $sqlInsert = "UPDATE users SET firstname= :firstname, lastname= :lastname, phone= :phone, website= :website, age= :age, dob= :dob  WHERE email= :email";
             $stmt = $this->conn->prepare($sqlInsert);
 
             $stmt->bindParam(':firstname',$this->firstname);
