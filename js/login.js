@@ -78,7 +78,7 @@ $(document).ready(function() {
             }
             else{
                 $('.alert').hide();
-                window.location.href = "/userProfile.html?user=" + data.status;
+                window.location.href = "userProfile.html?user=" + data.status;
             }        
         })
     }); 

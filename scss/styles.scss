@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap);
 
 $primary-color: #6C63FF;
 $btn-hover-color: #33313f;
@@ -7,7 +6,6 @@ $color-white: white;
 $bg-color: #bdbaf8;
 $primary-font: 'Nunito Sans';
 
-@import "../node_modules/bootstrap/scss/bootstrap";
 html {
   overflow-y: scroll; 
 }
