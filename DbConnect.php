@@ -1,8 +1,8 @@
 <?php 
 	class DbConnect {
-		private $host = 'localhost';
-		private $dbName = 'registration';
-		private $user = 'root';
+		private $host = 'http://sql6.freemysqlhosting.net/';
+		private $dbName = 'sql6398911';
+		private $user = 'sql6398911';
 		private $pass = 'GZxUrGwg9F';
 
 		public function connect() {
