@@ -177,15 +177,7 @@ $(document).ready(function() {
             method: 'post',
             data: formData + '&action=update',
         }).done(function(result){
-            console.log(result);
-            var data = JSON.parse(result);
-            $('.alert').show();
-            if(data.status == 0) {
-                $('#result').html(data.msg);               
-            }
-            else{
-                $('.alert').hide();
-            }        
+            console.log(result);  
         })
     }); 
 });

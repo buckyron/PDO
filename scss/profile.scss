@@ -13,6 +13,10 @@ $theme-colors: (
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+html {
+  overflow-y: scroll; 
+}
+
 
 body {
 	margin: 0;

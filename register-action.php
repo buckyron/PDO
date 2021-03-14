@@ -98,13 +98,9 @@ require 'users.php';
 
         $userData = $objUser->getUserByEmail();
 
-        if($userData['email'] != $users['email']){
-            echo json_encode(["status" => 0, "msg" => "Email not valid."]);
-            exit;
-        }
-
         if($objUser->update($users)) {
             echo json_encode(["status" => 1, "msg" => "Update Successful."]);
+            $objUser->createJSON();
         } else {
             echo json_encode(["status" => 0, "msg" => "Update failed."]);
         }
@@ -151,6 +147,8 @@ require 'users.php';
 
             return $users;
         }
+
+
 
 
 ?>

@@ -2,8 +2,8 @@
 	class DbConnect {
 		private $host = 'localhost';
 		private $dbName = 'registration';
-		private $user = 'buckyron';
-		private $pass = 'M99445867@l';
+		private $user = 'root';
+		private $pass = '';
 
 		public function connect() {
 			try {

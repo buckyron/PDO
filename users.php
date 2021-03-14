@@ -78,6 +78,17 @@
 			}
         }
 
+        public function createJSON(){
+            $query = "select * from Users";
+            $stmt = $this->conn->prepare($query);
+            $stmt->execute();
+            $result = $stmt->fetchAll();
+            $json = json_encode($result, true);
+            $fo = fopen("data.json", "w");
+            $fr = fwrite($fo, $json);
+            echo("erroe");
+        }
+
         public function update() {
             $sqlInsert = "UPDATE Users SET firstname= :firstname, lastname= :lastname, phone= :phone, website= :website, age= :age, dob= :dob  WHERE email= :email";
             $stmt = $this->conn->prepare($sqlInsert);

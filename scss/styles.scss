@@ -8,7 +8,9 @@ $bg-color: #bdbaf8;
 $primary-font: 'Nunito Sans';
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
+html {
+  overflow-y: scroll; 
+}
 body {
 	padding: 0;
 	margin: 0;
