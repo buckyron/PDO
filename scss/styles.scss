@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap);
+
+$primary-color: #6C63FF;
+$btn-hover-color: #33313f;
+$btn-color: #3e3d56;
+$color-white: white;
+$bg-color: #bdbaf8;
+$primary-font: 'Nunito Sans';
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	font-family: $primary-font;
+	background-color: $bg-color;
+}
+
+.welcome-back {
+	font-size: 2rem;
+	text-align: center;
+	color: $color-white;
+	font-weight: bold;
+
+}
+
+.display-image{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form{
+	.error {
+		color: $color-white;
+		font-weight: bold;
+	}
+}
+
+.form-control {
+	line-height: 2;
+}
+.bg-custom {
+	background-color: $primary-color;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	.username-label {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: start;
+		align-self: flex-start;
+	}
+	
+}
+.btn-custom {
+	background-color: $btn-color;
+	color: $color-white;
+	&:hover {
+		background-color: $btn-hover-color;
+		color: $color-white;
+	}
+}
+label {
+	color: $color-white
+}
+a {
+	color: $color-white;
+	text-decoration: none;
+	text-decoration: none;
+	&:hover {
+		color: $color-white;
+		text-decoration: none;
+		text-decoration: none;
+	}
+}
+
+.input-group {
+    align-items: center;
+	.input-group-addon a{
+		padding: 8px;
+		color: $btn-color;
+		background-color: $color-white;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+    
+}
+
+
+.signUp-signIn {
+	text-align: center;
+	padding: 1em;
+	font-weight: bold;
+}
+
+.alert {
+	display: none;
+}
+
+@media (max-width: 992px) {
+	.display-none {
+		display: none !important;
+	}
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h2 class="mb-2 hello-text">Hello There!</h2>
+        <div class="card h-100">
+            <div class="card-body">
+                <form action="" class="main-form" id="update-form">
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h6 class="mb-2 text-primary">Personal Details</h6>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="firstname">First Name</label>
+                                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Enter first name">
+                                <div class="error" id="check-fname">* Please enter your first name.</div> 
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="lName">Last Name</label>
+                                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Enter last name ">
+                                <div class="error" id="check-lname">* Please enter your last name.</div> 
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter phone number">
+                                <div class="error" id="check-phone">* Please enter your phone number.</div> 
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="website">Website URL</label>
+                                <input type="url" class="form-control" name="url" id="url" placeholder="Website url">
+                                <div class="error" id="check-url">* Please enter your website.</div> 
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" class="form-control" name="age" id="age" placeholder="Enter age">
+                                <div class="error" id="check-age">* Please enter your age.</div> 
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="dob">Date-Of-Birth</label>
+                                <input type="text" class="form-control" name="dob" id="dob" placeholder="mm/dd/yyyy">
+                                <div class="error" id="check-dob">* Please enter your D-O-B.</div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="text-right">
+                                <button type="submit" id="cancelbtn" name="cancel" class="btn btn-secondary">Cancel</button>
+                                <button type="submit" id="submitbtn" name="submit" class="btn btn-primary mb-3 mt-3">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+        <script src="js/profile.js"></script>
+</body>
+</html>

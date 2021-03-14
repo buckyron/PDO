@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register
+     Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+    <div class="row h-100">
+        <div class="col-sm-8 d-none d-sm-block p-0">
+            <img src="assets/signUp.svg" class="w-100">
+        </div>
+        <div class="col-sm-4 p-0 bg-custom ">
+            <form class=" main-form p-0 w-75" id="register-form" action="/userProfile.html">
+                <div class="welcome-back">JOIN US!</div>
+                <div class="form-group mb-3">
+                    <label for="username" class="username-label">Username</label>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="username">
+                    <div class="error" id="check-user">* Please enter a username.</div> 
+
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email" class="email-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="e-mail">
+                    <div class="error" id="check-email">* Please enter email.</div>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="show_hide_password" class="password-label">Password</label>
+                    <div class="input-group" id="show_hide_password">
+                      <input class="form-control" name="password" id="password" placeholder="password" type="password">
+                      <div class="input-group-addon">
+                        <a href="" ><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                      </div>                      
+                    </div>
+                    <div class="error" id="check-pass">* Please enter a password.</div>
+                </div>
+                <button type="submit" id="submitbtn" class="btn btn-custom btn-lg btn-block mt-3 mb-3">Register</button>
+                
+                <div class="alert alert-danger alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">x</button>
+					<div id="result"></div>
+				</div>
+                <div class="signUp-signIn">
+                    Already an User? <a href="index.php" class="signIn">Sign In</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
